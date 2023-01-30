@@ -1,0 +1,393 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.zaga-conteyner div{
+    width: auto;
+    height: 150px;
+}
+.zaga-conteyner{
+    position: relative;
+    background-color: black;
+    width: auto;
+    min-height: 950px;
+    height: auto;
+}
+
+.text{
+    font-size: 150px;
+    padding-top: 100px;
+
+}
+.text1{
+    animation: text1 5s 1;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes text1{
+    0%{
+        color: black;
+    }
+
+    30%{
+        color: white;
+    }
+    100%{
+        color: white;
+    }
+}
+.text2{
+    background-image: url(https://www.meme-arsenal.com/memes/f9e0321195746148edc650db954b2350.jpg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -400px 100px;
+    animation: text2 3s 1;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    
+
+}
+@keyframes text2{
+    0%{
+        background-position: -400px 100px;
+        
+
+    }
+    100%{
+        background-position:-10px 100px;
+    }
+
+}
+
+.pot-text{
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+    animation: pot-text 5s 1;
+    animation-delay: 4.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes pot-text{
+    0%{
+        color: #000;
+    }
+    30%{
+        color: white;
+    }
+    100%{
+        color: white;
+    }
+}
+center{
+    animation: span 3s infinite;
+    animation-delay: 5s;
+}
+
+@keyframes span {
+   0%{
+    text-shadow: 0px 0px 0.5px white;
+    } 
+    250%{
+        text-shadow: 1px 1px 10px white;
+    }
+    50%{
+        text-shadow: 2px 2px 15px white;
+    }
+    100%{
+        text-shadow: 0.1px 0.1px 0.5px white;
+    }
+}
+
+
+.content{
+    position: relative;
+    width: auto;
+    height: auto;
+    border: 0;
+}
+.pizz{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 1px solid;
+    background-color: white;
+    margin-top: -150px;
+    left: 50%;
+    transform: translate(-50%);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7YPN97qC4kjiqaYKPj9xq2-G8wi_HXbznCg&usqp=CAU);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: pizz 10s linear infinite;
+    
+}
+@keyframes pizz{
+    0%{
+        transform: translate(-50%) rotate(180deg);
+    }
+    100%{
+        transform: translate(-50%) rotate(-180deg);
+    }
+}
+
+
+.conteiner-tovartop{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 12%;
+}
+
+.conteiner-tovar2{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -2%;
+}
+
+.conteiner-tovar-vse{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -2%;
+}
+.content-tovar{
+    margin: 100px;
+    display: inline-block;
+    width: 650px;
+    height: 600px;
+    border: 1px solid;
+    border-radius: 20px;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* #Товар*/
+.tovar1-1{
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    box-shadow: 2px 2px 8px black;
+}
+.img-content{
+    left: -50%;
+    position: absolute;
+    width: 500px;
+    height: 700px;
+    border: 1px ;
+    box-shadow: 5px 0 5px black;
+    border-bottom-right-radius: 30px;
+}
+.tovar1-1 .text-content{
+    position: relative;
+    left: 50%;
+    position: absolute;
+    border: 1px ;
+    width: 325px;
+    height: 600px;
+}
+
+.zaga-content{
+    position: absolute;
+    padding-left: 10px;
+    top: 8%;
+    transform: translateY(-5%);
+    font-size: 50px;
+    color: #000;
+}
+.center-text-tovar{
+    padding-left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: #000;
+    
+}
+
+.baks{
+    position: absolute;
+    bottom: 15%;
+    width: 150px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin: 80px 40px 0 20px;
+}
+.baks p{
+    margin: 5px;
+    font-size: 30px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.button{
+    background-color: orange;
+    color: white;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    font-size: 40px ;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 4%;
+    left: 6%;
+    z-index: 3;
+    transition: 1s;
+}
+
+.img-content{
+    width: 700px;
+    height: 700px;
+    position: relative;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: 1s;
+}
+.img-content .img1{
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 45%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+
+}
+.aksia1-1{
+    position: absolute;
+    top: 5%;
+    right: 2.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2em;
+    font-size: 40px;
+    width: 100px;
+    height: 50px;
+    background-color: orange;
+    color: white;
+}
+
+.tovar1-1:hover .img-content{
+    left: -8%;
+}
+/* #Товар1-1*/
+
+
+.tovar1-2{
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    box-shadow: 2px 2px 8px black;
+}
+.tovar1-2 .img-content{
+    left: -57.5%;
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border: 1px ;
+    box-shadow: 5px 0 5px black;
+    border-bottom-right-radius: 30px;
+
+}
+.tovar1-2 .text-content{
+    left: 50%;
+    position: absolute;
+    border: 1px ;
+    width: 325px;
+    height: 600px;
+}
+
+.zaga-content{
+    margin: 20px 0 20px 20px;
+    font-size: 50px;
+    color: #000;
+}
+.img-content{
+    position: relative;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: 1s;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.img-content .img2{
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top: 43%;
+    left: 54%;
+    transform: translate(-50%,-50%);
+
+}
+.pizz-tovar .aksia1-2{
+    top: 5%;
+    left: 83%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 100px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 2em;
+    color: white;
+}
+
+.tovar1-2:hover .img-content{
+    left: -18%;
+}
+/* #Товар1-2*/
+
+
+
+
+.pol{
+    background-color: #000;
+    width: auto;
+    height: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    position: relative;
+}
+.pol p{
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    bottom: 20px;
+}
+
+
+
+
+
+
